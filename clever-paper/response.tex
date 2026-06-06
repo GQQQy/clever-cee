@@ -1,0 +1,246 @@
+ \documentclass[3p]{elsarticle}
+%\documentclass[preprint]{elsarticle}
+
+\usepackage{amsmath, amsfonts, amsthm, bm}
+\usepackage{amssymb}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\usepackage{graphicx}
+\usepackage{svg}         
+
+\usepackage{array}         
+\usepackage{booktabs}      % \toprule \midrule \bottomrule
+\usepackage{multirow}
+\usepackage{threeparttable}
+
+\usepackage{stfloats}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}   
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{pifont}      
+\usepackage{enumitem}
+
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{subcaption}    
+\usepackage{multicol}
+\usepackage{xcolor}        
+\usepackage{soul}          
+\usepackage{tcolorbox}
+
+\usepackage{tabularx}           
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}   
+\newcolumntype{C}{>{\centering\arraybackslash}X}     
+
+% ===========================
+% ===========================
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{assumption}{Assumption}
+
+% ===========================
+% ===========================
+
+\journal{Computers and Electrical Engineering}
+% ========================================================================
+\usepackage{CJKutf8}
+
+\biboptions{sort&compress}
+
+\begin{document}
+
+\section*{Summary of Revisions}
+
+In accordance with the editor’s decision and the reviewers’ comments, we have carefully revised the manuscript. 
+Below we summarize how each major comment has been addressed. 
+This section is included only in the revised submission and will be removed in the final camera-ready version.
+
+\textbf{Reviewer 1}
+\begin{itemize}
+
+    \item \textbf{Comment 1:} 
+    The abstract is too long and should be tightened to emphasize the key contributions and quantitative findings.
+
+    \textbf{Response:}
+    We thank the reviewer for the helpful suggestion. The abstract has been thoroughly revised and significantly shortened. The updated version highlights CleVer’s core contributions and main results in a more concise and focused manner.
+
+    \item \textbf{Comment 2:}
+    The mathematical symbols (e.g., $F(t)$, $f(s)$) are reused with slightly varying meanings. A notation summary table should be added.
+
+    \textbf{Response:}
+    We appreciate the reviewer’s observation. 
+    We have added a complete notation summary table (Table 2) near the beginning of the paper. 
+    The symbols are now consistently defined, with clarified meanings and units where appropriate.
+
+    \item \textbf{Comment 3:}
+    Typographical issues: “we describe the system model” → 
+    “Section~4 describes…”. The expression “V er(·)” should be consistently formatted.
+
+    \textbf{Response:}
+    Thank you for pointing this out. 
+    We have revised the affected sentences to use correct section references. All occurrences of the verification operator have been standardized to $Ver(\cdot)$ for consistency throughout the manuscript.
+
+    \item \textbf{Comment 4:}
+    Several tables lack proper captions or units.
+
+    \textbf{Response:}
+    We have updated all tables to include complete captions, units, 
+    and explanatory footnotes where necessary, and the tables now include explicit definitions of reported metrics and their measurement units.
+
+    \item \textbf{Comment 5:}
+    Figures 3 and 4 are informative but visually dense. 
+    Consider simplifying flow arrows or splitting into subfigures.
+
+    \textbf{Response:}
+    We agree and have simplified Figures~3 and~4 to improve readability. 
+    The revised versions reduce visual density by streamlining flow arrows and restructuring elements to make the diagrams easier to interpret.
+
+    \item \textbf{Comment 6:}
+    The conclusion requires a brief discussion of limitations, such as 
+    dependence on blockchain reliability and assumptions about honest majority.
+
+    \textbf{Response:}
+    We appreciate this suggestion. 
+    We have expanded the conclusion to include a concise discussion of 
+    CleVer’s limitations, including its reliance on blockchain liveness 
+    and stability, and the increased hardware demands for verifying 
+    computation-intensive tasks. We also outline possible directions for future improvement.
+
+\end{itemize}
+
+
+\textbf{Reviewer 2}
+\begin{itemize}
+
+    \item \textbf{Comment 1:} 
+    The manuscript contains grammatical and formatting issues. Specifically:
+    (i) In Section 2.3, the subject–verb agreement in “None of these directions fully satisfy…” is incorrect.  
+    (ii) Section 8 lacks a glossary table explaining symbolic variables.  
+    (iii) When comparing to prior work, references should be re-cited instead of mentioning scheme names directly.  
+    Several other grammatical issues remain.
+
+    \textbf{Response:} 
+    We thank the reviewer for the careful reading.  
+    We have thoroughly revised the manuscript to correct all grammatical and formatting issues.  
+    In Section 2.3, the verb has been corrected to “fully satisfies” to maintain proper subject–verb agreement.  
+    Furthermore, a complete glossary of symbolic variables used in the experimental section has been added, including detailed definitions and units.  
+    In Section 8, all prior schemes mentioned in the comparison table and explanatory text now include explicit citations.  
+    Additional formatting issues (notation consistency, capitalization, and table/figure references) have also been corrected throughout the manuscript.
+    
+    \item \textbf{Comment 2:} 
+    Only 45\% of references fall within 2021–2025, reducing the timeliness and relevance of the literature review.
+
+    \textbf{Response:} 
+    We have significantly updated the reference list to incorporate recent works from 2021–2025 in verifiable computation, optimistic rollups, anonymous verification, and staking-based incentive systems.  
+    The proportion of recent citations has been substantially increased, strengthening the timeliness and relevance of the related-work section.
+
+    \item \textbf{Comment 3:} 
+    The Introduction suggests that not using ZKP is an advantage, but Section 6 employs ZKP for anonymous verification, creating an apparent contradiction.
+
+    \textbf{Response:}
+    We appreciate this valuable observation.  
+    We have clarified both in the Introduction and in Section 6 that CleVer does \emph{not} rely on ZKP for computation verification.  
+    The ZKP module is used solely as an auxiliary identity-protection component in the anonymous verifier staking and election protocol.  
+    This usage follows a separate design path and does not affect CleVer’s core verification logic or its avoidance of ZK-based computation proofs.  
+    An explicit explanation has been added in the contribution summary and Section 6 to ensure conceptual consistency.
+
+    \item \textbf{Comment 4:} 
+    Section 7’s security analysis does not clearly correspond to the threat model in Section 4.3.
+
+    \textbf{Response:} 
+    We have fully revised Section 4.3 to present a clearer and more structured threat model with three explicit categories:  
+    (i) verifier identity exposure and targeted attacks,  
+    (ii) dishonest or lazy verification behavior, and  
+    (iii) incentive failures and challenge-window abuse.  
+    In Section 7, the security analysis has been reorganized or referenced to match these three categories directly:  
+    system anonymity (Section 7.1), honest verification enforcement (Section 7.2), and incentive compatibility with bounded blocking (Section 7.3).  
+    This creates a clear one-to-one mapping between threats and defenses, resolving the logical gap noted by the reviewer.
+
+    \item \textbf{Comment 5:} 
+    The comparison in Section 8 mixes theoretical and implementation-based results, making the evaluation less consistent.
+
+    \textbf{Response:} 
+    At the beginning of Section 8, we have added a methodological clarification explaining that prior schemes such as Truebit, Arbitrum, and state-channel approaches report only asymptotic or analytical performance in their original papers.  
+    Therefore, we present analytical comparisons for structural properties such as redundancy and finality.  
+    CleVer’s implementation-level performance is evaluated separately in the subsequent subsections.  
+    These two dimensions—analytical comparison for structural behavior and empirical benchmarks for realized performance—are complementary and together form a complete and consistent evaluation methodology.
+
+    \item \textbf{Comment 6:} 
+    The evaluation lacks detailed comparisons with recent verifiable computation frameworks.
+
+    \textbf{Response:} 
+    We have expanded the discussion in Section 8 to include comparisons against recent verification frameworks where meaningful metrics are available. For frameworks without publicly available prototypes, we provide analytical comparisons following standard practice in the literature.  
+    This enhanced comparison highlights CleVer’s structural advantages—reduced dispute rounds, avoidance of redundant recomputation, flexible staking-based finality—while empirical experiments demonstrate its practical performance on real workloads. \\
+
+\end{itemize}
+
+
+
+\textbf{Reviewer 3}
+\begin{itemize}
+
+    \item \textbf{Comment 1: Terminology consistency.}  
+    Standardize abbreviations and technical terms.
+
+    \textbf{Response:}  
+    We have reviewed the manuscript and standardized all terminology and abbreviations.  
+
+    \item \textbf{Comment 2: Language and structure.}  
+    Improve grammatical accuracy and sentence flow.
+
+    \textbf{Response:}  
+    We have performed a careful revision of the manuscript to correct grammatical errors and improve sentence structure.  
+    Examples highlighted by the reviewer have been corrected.     Additional sentences throughout the paper have been refined for clarity and readability.
+
+    \item \textbf{Comment 3: Figures and tables.}  
+    Ensure sequential referencing, unify caption formats, and remove duplicate captions.
+
+    \textbf{Response:}  
+    All figures and tables have been checked for sequential numbering and consistent referencing.  
+
+    \item \textbf{Comment 4: Experimental setup clarification.}  
+    Explain how the snapshot interval threshold is determined (fixed or dynamically tuned).
+
+    \textbf{Response:}  
+    We have added a clarification in Section~8 to state that the snapshot interval is determined by the accumulated instruction weight, and that instruction weights can be dynamically tuned according to blockchain node execution capabilities.  
+
+    \item \textbf{Comment 5: Notation and variable consistency.}  
+    Unify symbol formatting such as $T_w$ vs.\ $Tw$.
+
+    \textbf{Response:}  
+    We have unified mathematical notation across the entire manuscript.  The notation table (Table~\ref{Notations}) provides a clean and authoritative reference for all symbols.
+
+    \item \textbf{Comment 6: Anonymity scope explanation.}  
+    Clarify whether verifier anonymity remains unlinkable across multiple tasks.
+
+    \textbf{Response:}  
+    A dedicated clarification has been added to Section~6.  
+    We now explicitly state that verifier identities remain unlinkable across different tasks because  each participation uses a fresh commitment and nullifier, preventing cross-task linkage.  This emphasizes the strong anonymity guarantees of the protocol.
+
+    \item \textbf{Comment 7: Reference formatting.}  
+    Merge citation ranges and ensure ascending numerical order.
+
+    \textbf{Response:}  
+    All references have been reorganized to follow ascending numerical order.  
+    Citation ranges have been merged into compact forms.  
+
+    \item \textbf{Comment 8: Formatting consistency.}  
+    Unify capitalization of section titles and remove duplicated explanations.
+
+    \textbf{Response:}  
+    Section titles have been standardized to title case.  
+    Redundant or repeated explanations—such as duplicated content on static versus dynamic data—have been removed.  
+    Overall formatting consistency has been improved across the manuscript.
+
+\end{itemize}
+
+
+\end{document}

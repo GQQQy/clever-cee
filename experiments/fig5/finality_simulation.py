@@ -13,11 +13,12 @@ import argparse
 import csv
 import math
 import os
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Dict, Iterable, List
 
-os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/clever_mplconfig")
+os.environ.setdefault("MPLCONFIGDIR", str(Path(tempfile.gettempdir()) / "clever_mplconfig"))
 
 import matplotlib
 

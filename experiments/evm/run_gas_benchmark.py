@@ -14,11 +14,12 @@ import json
 import os
 import re
 import subprocess
+import tempfile
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, Iterable, List
 
-os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/clever_mplconfig")
+os.environ.setdefault("MPLCONFIGDIR", str(Path(tempfile.gettempdir()) / "clever_mplconfig"))
 
 import matplotlib
 

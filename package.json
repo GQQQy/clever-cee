@@ -8,7 +8,9 @@
     "bench:zk": "node experiments/zk/benchmark_snarkjs.js",
     "bench:evm": "python3 experiments/evm/run_gas_benchmark.py",
     "bench:all": "python3 experiments/fig5/finality_simulation.py && node experiments/zk/benchmark_snarkjs.js && python3 experiments/evm/run_gas_benchmark.py",
-    "paper:reference": "python3 reproduce_experiments.py"
+    "paper:reference": "python3 reproduce_experiments.py",
+    "validate:paper": "python3 validate_paper_alignment.py",
+    "demo:paper": "python3 reproduce_experiments.py && python3 validate_paper_alignment.py"
   },
   "devDependencies": {
     "snarkjs": "^0.7.5"
