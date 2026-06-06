@@ -1,0 +1,4 @@
+circuit,compile_seconds,setup_seconds,witness_seconds,proof_gen_seconds,verify_seconds,wires,constraints,private_inputs,public_outputs,source,ptau_seconds
+pi_mix,0.073366,1.962488,0.271593,0.816686,0.705049,545,534,18,,measured_circom_snarkjs_groth16_bn254,0.000000
+pi_N_i,0.792754,13.542829,0.307059,1.766274,0.682966,12015,12007,8,,measured_circom_snarkjs_groth16_bn254,0.000000
+pi_l,0.097716,1.889686,0.273914,0.747494,0.686951,379,372,6,,measured_circom_snarkjs_groth16_bn254,0.000000

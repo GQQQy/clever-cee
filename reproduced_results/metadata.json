@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "figure": "fig5_finality_rounds",
+      "outputs": [
+        "fig5_finality_rounds.csv",
+        "fig5_finality_rounds.pdf",
+        "fig5_finality_rounds.png"
+      ],
+      "parameters": {
+        "gamma": 0.2,
+        "linear_a": 1.0,
+        "log_a": 1.0
+      },
+      "source": "paper_fig5_formula_generalized_inverse"
+    },
+    {
+      "outputs": [
+        "table7_zkbench.csv",
+        "table7_zkbench.json",
+        "table7_zkbench_metadata.json",
+        "table7_zkbench.tex"
+      ],
+      "source": "paper_reported_table7",
+      "table": "table7_zkbench"
+    },
+    {
+      "figure": "fig6_gascost",
+      "outputs": [
+        "fig6_gascost.csv",
+        "fig6_gascost.png",
+        "fig6_gascost.pdf"
+      ],
+      "source": "paper_fig6_deterministic_simulation_seed_42"
+    }
+  ],
+  "integrity_note": "Generated outputs distinguish formula-derived, paper-reported, and deterministic simulation sources. They should not be presented as newly measured raw benchmarks unless the missing original implementations are supplied and rerun.",
+  "paper": "CleVer",
+  "validation": {
+    "checked_artifacts": [
+      "fig5_finality_rounds",
+      "fig6_gascost",
+      "table7_zkbench"
+    ],
+    "status": "passed"
+  }
+}

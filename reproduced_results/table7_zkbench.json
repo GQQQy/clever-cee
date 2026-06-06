@@ -1,0 +1,35 @@
+[
+  {
+    "circuit": "pi_mix",
+    "circuit_latex": "$\\pi_{\\text{mix}}$",
+    "compile_seconds": 0.297,
+    "compile_time": "297 ms",
+    "proof_gen_seconds": 0.0024,
+    "proof_gen_time": "2.4 ms",
+    "setup_seconds": 1.2,
+    "setup_time": "1.2 s",
+    "source": "paper_reported_table7"
+  },
+  {
+    "circuit": "pi_N_i",
+    "circuit_latex": "$\\pi_{N_i}$",
+    "compile_seconds": 1.43,
+    "compile_time": "1.43 s",
+    "proof_gen_seconds": 1.3,
+    "proof_gen_time": "1.3 s",
+    "setup_seconds": 5.2,
+    "setup_time": "5.2 s",
+    "source": "paper_reported_table7"
+  },
+  {
+    "circuit": "pi_l",
+    "circuit_latex": "$\\pi_\\ell$",
+    "compile_seconds": 0.286,
+    "compile_time": "286 ms",
+    "proof_gen_seconds": 0.0023,
+    "proof_gen_time": "2.3 ms",
+    "setup_seconds": 1.1,
+    "setup_time": "1.1 s",
+    "source": "paper_reported_table7"
+  }
+]

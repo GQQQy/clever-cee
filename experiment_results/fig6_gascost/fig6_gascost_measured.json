@@ -1,0 +1,172 @@
+{
+  "components": [
+    "zk_proof_verification",
+    "storage_append",
+    "ec_operations",
+    "mapping_lookup",
+    "control_logic"
+  ],
+  "rows": [
+    {
+      "control_logic": 18064,
+      "ec_operations": 316913,
+      "mapping_lookup": 2287807,
+      "storage_append": 2261294,
+      "total_gas": 14768543,
+      "total_gas_millions_label": "14.8M",
+      "verifiers": 50,
+      "zk_proof_verification": 9884465
+    },
+    {
+      "control_logic": 21509,
+      "ec_operations": 380083,
+      "mapping_lookup": 2740731,
+      "storage_append": 2709051,
+      "total_gas": 17712382,
+      "total_gas_millions_label": "17.7M",
+      "verifiers": 60,
+      "zk_proof_verification": 11861008
+    },
+    {
+      "control_logic": 24958,
+      "ec_operations": 443253,
+      "mapping_lookup": 3193665,
+      "storage_append": 3156813,
+      "total_gas": 20656241,
+      "total_gas_millions_label": "20.7M",
+      "verifiers": 70,
+      "zk_proof_verification": 13837552
+    },
+    {
+      "control_logic": 28410,
+      "ec_operations": 506423,
+      "mapping_lookup": 3646607,
+      "storage_append": 3604579,
+      "total_gas": 23600114,
+      "total_gas_millions_label": "23.6M",
+      "verifiers": 80,
+      "zk_proof_verification": 15814095
+    },
+    {
+      "control_logic": 31865,
+      "ec_operations": 569593,
+      "mapping_lookup": 4099570,
+      "storage_append": 4052355,
+      "total_gas": 26544023,
+      "total_gas_millions_label": "26.5M",
+      "verifiers": 90,
+      "zk_proof_verification": 17790640
+    },
+    {
+      "control_logic": 35324,
+      "ec_operations": 632763,
+      "mapping_lookup": 4552535,
+      "storage_append": 4500133,
+      "total_gas": 29487940,
+      "total_gas_millions_label": "29.5M",
+      "verifiers": 100,
+      "zk_proof_verification": 19767185
+    },
+    {
+      "control_logic": 38629,
+      "ec_operations": 695933,
+      "mapping_lookup": 5005509,
+      "storage_append": 4947915,
+      "total_gas": 32431716,
+      "total_gas_millions_label": "32.4M",
+      "verifiers": 110,
+      "zk_proof_verification": 21743730
+    },
+    {
+      "control_logic": 42253,
+      "ec_operations": 759103,
+      "mapping_lookup": 5458494,
+      "storage_append": 5395702,
+      "total_gas": 35375827,
+      "total_gas_millions_label": "35.4M",
+      "verifiers": 120,
+      "zk_proof_verification": 23720275
+    },
+    {
+      "control_logic": 45801,
+      "ec_operations": 822273,
+      "mapping_lookup": 5911498,
+      "storage_append": 5843499,
+      "total_gas": 38319892,
+      "total_gas_millions_label": "38.3M",
+      "verifiers": 130,
+      "zk_proof_verification": 25696821
+    },
+    {
+      "control_logic": 49116,
+      "ec_operations": 885443,
+      "mapping_lookup": 6364504,
+      "storage_append": 6291297,
+      "total_gas": 41263727,
+      "total_gas_millions_label": "41.3M",
+      "verifiers": 140,
+      "zk_proof_verification": 27673367
+    },
+    {
+      "control_logic": 52514,
+      "ec_operations": 948613,
+      "mapping_lookup": 6817518,
+      "storage_append": 6739099,
+      "total_gas": 44207658,
+      "total_gas_millions_label": "44.2M",
+      "verifiers": 150,
+      "zk_proof_verification": 29649914
+    },
+    {
+      "control_logic": 55994,
+      "ec_operations": 1011783,
+      "mapping_lookup": 7270544,
+      "storage_append": 7186907,
+      "total_gas": 47151689,
+      "total_gas_millions_label": "47.2M",
+      "verifiers": 160,
+      "zk_proof_verification": 31626461
+    },
+    {
+      "control_logic": 59636,
+      "ec_operations": 1074953,
+      "mapping_lookup": 7723590,
+      "storage_append": 7634725,
+      "total_gas": 50095913,
+      "total_gas_millions_label": "50.1M",
+      "verifiers": 170,
+      "zk_proof_verification": 33603009
+    },
+    {
+      "control_logic": 63123,
+      "ec_operations": 1138123,
+      "mapping_lookup": 8176636,
+      "storage_append": 8082543,
+      "total_gas": 53039981,
+      "total_gas_millions_label": "53.0M",
+      "verifiers": 180,
+      "zk_proof_verification": 35579556
+    },
+    {
+      "control_logic": 66534,
+      "ec_operations": 1201293,
+      "mapping_lookup": 8629691,
+      "storage_append": 8530365,
+      "total_gas": 55983988,
+      "total_gas_millions_label": "56.0M",
+      "verifiers": 190,
+      "zk_proof_verification": 37556105
+    },
+    {
+      "control_logic": 70186,
+      "ec_operations": 1264463,
+      "mapping_lookup": 9082757,
+      "storage_append": 8978193,
+      "total_gas": 58928252,
+      "total_gas_millions_label": "58.9M",
+      "verifiers": 200,
+      "zk_proof_verification": 39532653
+    }
+  ],
+  "source": "foundry_measured_solidity_gas"
+}

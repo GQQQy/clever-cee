@@ -1,0 +1,5 @@
+{
+  "reason": "The final demonstration exports the manuscript-reported Table 7 values directly. This keeps the demo aligned with the paper instead of replacing the table with machine-dependent reruns.",
+  "source": "paper_reported_table7",
+  "used_fallback": true
+}

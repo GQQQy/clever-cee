@@ -1,0 +1,16 @@
+{
+  "name": "clever-experiments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Executable experiments for the CleVer paper figures and ZK microbenchmarks.",
+  "scripts": {
+    "bench:fig5": "python3 experiments/fig5/finality_simulation.py",
+    "bench:zk": "node experiments/zk/benchmark_snarkjs.js",
+    "bench:evm": "python3 experiments/evm/run_gas_benchmark.py",
+    "bench:all": "python3 experiments/fig5/finality_simulation.py && node experiments/zk/benchmark_snarkjs.js && python3 experiments/evm/run_gas_benchmark.py",
+    "paper:reference": "python3 reproduce_experiments.py"
+  },
+  "devDependencies": {
+    "snarkjs": "^0.7.5"
+  }
+}

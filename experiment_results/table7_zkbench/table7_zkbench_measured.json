@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-06-06T03:12:03.349Z",
+  "toolchain": {
+    "circom": "circom compiler 2.1.8",
+    "snarkjs": "snarkjs@0.7.6",
+    "node": "v25.9.0",
+    "ptau_power": 14
+  },
+  "rows": [
+    {
+      "circuit": "pi_mix",
+      "compile_seconds": "0.073366",
+      "setup_seconds": "1.962488",
+      "witness_seconds": "0.271593",
+      "proof_gen_seconds": "0.816686",
+      "verify_seconds": "0.705049",
+      "wires": "545",
+      "constraints": "534",
+      "private_inputs": "18",
+      "public_outputs": "",
+      "source": "measured_circom_snarkjs_groth16_bn254",
+      "ptau_seconds": "0.000000"
+    },
+    {
+      "circuit": "pi_N_i",
+      "compile_seconds": "0.792754",
+      "setup_seconds": "13.542829",
+      "witness_seconds": "0.307059",
+      "proof_gen_seconds": "1.766274",
+      "verify_seconds": "0.682966",
+      "wires": "12015",
+      "constraints": "12007",
+      "private_inputs": "8",
+      "public_outputs": "",
+      "source": "measured_circom_snarkjs_groth16_bn254",
+      "ptau_seconds": "0.000000"
+    },
+    {
+      "circuit": "pi_l",
+      "compile_seconds": "0.097716",
+      "setup_seconds": "1.889686",
+      "witness_seconds": "0.273914",
+      "proof_gen_seconds": "0.747494",
+      "verify_seconds": "0.686951",
+      "wires": "379",
+      "constraints": "372",
+      "private_inputs": "6",
+      "public_outputs": "",
+      "source": "measured_circom_snarkjs_groth16_bn254",
+      "ptau_seconds": "0.000000"
+    }
+  ]
+}

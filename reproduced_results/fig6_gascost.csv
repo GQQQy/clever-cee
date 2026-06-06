@@ -1,0 +1,17 @@
+verifiers,zk_proof_verification,storage_append,ec_operations,mapping_lookup,control_logic,total_gas,total_gas_millions_label,source
+50,12437270,1976509,334776,10093,239046,14997694,15.0M,paper_fig6_deterministic_simulation_seed_42
+60,15270428,2403564,438853,11243,302561,18426649,18.4M,paper_fig6_deterministic_simulation_seed_42
+70,17662395,2788566,512815,15314,324864,21303954,21.3M,paper_fig6_deterministic_simulation_seed_42
+80,20078926,3159915,577270,16880,424175,24257166,24.3M,paper_fig6_deterministic_simulation_seed_42
+90,22190416,3624160,617690,19582,411709,26863557,26.9M,paper_fig6_deterministic_simulation_seed_42
+100,24655994,3913478,671837,21579,548688,29811576,29.8M,paper_fig6_deterministic_simulation_seed_42
+110,27013891,4345126,784185,22430,579946,32745578,32.7M,paper_fig6_deterministic_simulation_seed_42
+120,30439411,4761512,834972,26024,563845,36625764,36.6M,paper_fig6_deterministic_simulation_seed_42
+130,32631449,5186293,875605,23860,585717,39302924,39.3M,paper_fig6_deterministic_simulation_seed_42
+140,35291301,5695819,979527,26297,744164,42737108,42.7M,paper_fig6_deterministic_simulation_seed_42
+150,36780876,5891882,1001110,27271,781028,44482167,44.5M,paper_fig6_deterministic_simulation_seed_42
+160,40751855,6405466,1165843,30882,836641,49190687,49.2M,paper_fig6_deterministic_simulation_seed_42
+170,43065152,6837705,1161294,33243,896115,51993509,52.0M,paper_fig6_deterministic_simulation_seed_42
+180,44482210,7004066,1280477,34353,823328,53624434,53.6M,paper_fig6_deterministic_simulation_seed_42
+190,46895467,7649040,1304957,40498,923108,56813070,56.8M,paper_fig6_deterministic_simulation_seed_42
+200,49366809,7841851,1402809,38854,923173,59573496,59.6M,paper_fig6_deterministic_simulation_seed_42
